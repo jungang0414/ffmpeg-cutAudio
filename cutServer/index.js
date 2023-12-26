@@ -27,5 +27,5 @@ app.post('/clip-audio', upload.single('audioFile'), (req, res) => {
 
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log(`伺服器運行 PORT: ${port}`)
+    console.log(`伺服器運行`)
 })
