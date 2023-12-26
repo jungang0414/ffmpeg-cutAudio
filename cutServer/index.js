@@ -5,7 +5,7 @@ const ffmpeg = require("fluent-ffmpeg");
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 
-app.post('/clip-audio', upload.single('audioFile'), (req, res) => {
+app.post('/', upload.single('audioFile'), (req, res) => {
     const audioFile = req.file.path;
     const startTime = req.body.startTime;
     const duration = req.body.duration;
